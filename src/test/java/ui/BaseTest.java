@@ -48,4 +48,5 @@ public class BaseTest {
         } else {
             driver = new ChromeDriver();
         }
+    }
 }
