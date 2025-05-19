@@ -32,7 +32,6 @@ public class BaseTestForPOM {
 
     private void initDriver() {
         String remoteUrl = System.getenv("SELENIUM_REMOTE_URL");
-        System.out.println("SELENIUM_REMOTE_URL = " + remoteUrl);
         Allure.addAttachment("remote", remoteUrl);
         if (remoteUrl != null || !remoteUrl.isEmpty()) {
             ChromeOptions options = new ChromeOptions();
