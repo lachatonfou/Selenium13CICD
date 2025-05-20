@@ -32,7 +32,6 @@ public class BaseTest {
 
     private void initDriver() {
         String remoteUrl = System.getenv("SELENIUM_REMOTE_URL");
-        Allure.addAttachment("remote", remoteUrl);
         if (remoteUrl != null || !remoteUrl.isEmpty()) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");  // Add headless mode
